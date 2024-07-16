@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="DispatchController" method="POST">
+            Username:<input type="text" name="txtUsername" value="" /><br/>
+            Password:<input type="password" name="txtPassword" value="" /><br/>
+            <input type="submit" value="Login" name="btAction" />
+            <button type="button" onclick="sign_up()">Sign up</button>
+        </form>
+        <br>
+
+        <script>
+            function sign_up() {
+                location.assign("http://localhost:9999/project/signup.html");
+            }
+        </script>
+
+    </body>
+</html>
